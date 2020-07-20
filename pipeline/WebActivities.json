@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": " \thttp://dummy.restapiexample.com/api/v1/employees",
+					"url": "https://jsonplaceholder.typicode.com/todos/1",
 					"method": "GET"
 				}
 			},
@@ -39,13 +39,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": " \thttp://dummy.restapiexample.com/api/v1/create",
+					"url": "https://jsonplaceholder.typicode.com/posts",
 					"method": "POST",
-					"body": {
-						"name": "test",
-						"salary": "123",
-						"age": "23"
-					}
+					"body": "{\n  title: 'foo',\n  body: 'bar',\n  userId: 1\n}"
 				}
 			},
 			{
@@ -68,16 +64,28 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": " \thttp://dummy.restapiexample.com/api/v1/create",
+					"url": "https://jsonplaceholder.typicode.com/posts",
 					"method": "POST",
 					"headers": {
 						"Content-type": "application/json"
 					},
-					"body": {
-						"name": "test",
-						"salary": "123",
-						"age": "23"
-					}
+					"body": "{\n  title: 'foo',\n  body: 'bar',\n  userId: 1\n}"
+				}
+			},
+			{
+				"name": "AppService",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://dummygetapi2.azurewesites.net"
 				}
 			}
 		],
