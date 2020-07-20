@@ -85,7 +85,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dummygetapi2.azurewesites.net"
+					"url": "https://dummygetapi2.azurewesites.net",
+					"method": "GET"
 				}
 			}
 		],
