@@ -93,7 +93,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dummygetapi.azurewebsites.net/",
+					"url": "https://dummygetapi1.azurewebsites.net/",
 					"method": "GET"
 				}
 			}
